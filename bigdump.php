@@ -53,6 +53,22 @@ $db_password = '';
 
 $db_connection_charset = 'utf8';
 
+
+
+
+
+
+$db_server   = 'localhost';
+$db_name     = 'trips777';
+$db_username = 'root';
+$db_password = '';
+
+// Connection charset should be the same as the dump file charset (utf8, latin1, cp1251, koi8r etc.)
+// See http://dev.mysql.com/doc/refman/5.0/en/charset-charsets.html for the full list
+// Change this if you have problems with non-latin letters
+
+$db_connection_charset = 'utf8';
+
 // OPTIONAL SETTINGS 
 
 $filename           = '';     // Specify the dump filename to suppress the file selection dialog
@@ -150,6 +166,8 @@ if (is_dir(PLUGIN_DIR))
 
 do_action('header');
 
+
+do_action('header');
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
